@@ -7,7 +7,10 @@
 <title>Travello</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Travello template project">
+<meta name="description" 
+content="top travel destinatios,interesting travel destinations,amazing services,best tips to travel,
+top 50 travel destinations in the world,travel destinations,best vacation destinations,
+sights to see in the world,travello,Travello template project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
 <link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
@@ -170,9 +173,9 @@ gtag('config', 'G-HDMDBMSL69');
 
 			<div class="home_page_nav">
 				<ul class="d-flex flex-column align-items-end justify-content-end">
-					<li><a href="#" data-scroll-to="#destinations">Offers<span>01</span></a></li>
-					<li><a href="#" data-scroll-to="#testimonials">Testimonials<span>02</span></a></li>
-					<li><a href="#" data-scroll-to="#news">Latest<span>03</span></a></li>
+					<li><a href="#" title="offers" data-scroll-to="#destinations"><h1>Offers</h1><span>01</span></a></li>
+					<li><a href="#" title="testinomials" data-scroll-to="#testimonials"><h1>Testimonials</h1><span>02</span></a></li>
+					<li><a href="#" title="latest" data-scroll-to="#news"><h1>Latest</h1><span>03</span></a></li>
 				</ul>
 			</div>
 		</div>
@@ -216,7 +219,7 @@ gtag('config', 'G-HDMDBMSL69');
 							<!-- Intro Item -->
 							<div class="col-lg-4 intro_col">
 								<div class="intro_item d-flex flex-row align-items-end justify-content-start">
-									<div class="intro_icon"><img src="{% static 'images/beach.svg' %}" alt=""></div>
+									<div class="intro_icon"><img src="{% static 'images/beach.svg' %}" alt="travel"></div>
 									<div class="intro_content">
 										<div class="intro_title">Top Destinations</div>
 										<div class="intro_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
@@ -227,7 +230,7 @@ gtag('config', 'G-HDMDBMSL69');
 							<!-- Intro Item -->
 							<div class="col-lg-4 intro_col">
 								<div class="intro_item d-flex flex-row align-items-end justify-content-start">
-									<div class="intro_icon"><img src="../static/images/wallet.svg" alt=""></div>
+									<div class="intro_icon"><img src="../static/images/wallet.svg" alt="travel"></div>
 									<div class="intro_content">
 										<div class="intro_title">The Best Prices</div>
 										<div class="intro_subtitle"><p>Sollicitudin mauris lobortis in.</p></div>
@@ -238,7 +241,7 @@ gtag('config', 'G-HDMDBMSL69');
 							<!-- Intro Item -->
 							<div class="col-lg-4 intro_col">
 								<div class="intro_item d-flex flex-row align-items-end justify-content-start">
-									<div class="intro_icon"><img src="{% static 'images/suitcase.svg' %}" alt=""></div>
+									<div class="intro_icon"><img src="{% static 'images/suitcase.svg' %}" alt="travel"></div>
 									<div class="intro_content">
 										<div class="intro_title">Amazing Services</div>
 										<div class="intro_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
@@ -271,8 +274,8 @@ gtag('config', 'G-HDMDBMSL69');
 						<!-- Destination -->
 						<div class="destination item">
 							<div class="destination_image">
-								<!-- <img src="{{baseUrl}}/{{dest.img}}" alt=""> -->
-								<img src="{{dest.img.url}}" alt="">
+								<!-- <img src="{{baseUrl}}/{{dest.img}}" alt="travel"> -->
+								<img src="{{dest.img.url}}" alt="travel">
 
 								{% if dest.offer%}
 								<div class="spec_offer text-center"><a href="#">Special Offer</a></div>
@@ -366,7 +369,7 @@ gtag('config', 'G-HDMDBMSL69');
 
 						<!-- News Post -->
 						<div class="news_post d-flex flex-md-row flex-column align-items-start justify-content-start">
-							<div class="news_post_image"><img src="{% static 'images/news_1.jpg' %}" alt=""></div>
+							<div class="news_post_image"><img src="{% static 'images/news_1.jpg' %}" alt="travel"></div>
 							<div class="news_post_content">
 								<div class="news_post_date d-flex flex-row align-items-end justify-content-start">
 									<div>02</div>
@@ -386,7 +389,7 @@ gtag('config', 'G-HDMDBMSL69');
 
 						<!-- News Post -->
 						<div class="news_post d-flex flex-md-row flex-column align-items-start justify-content-start">
-							<div class="news_post_image"><img src="{% static 'images/news_2.jpg' %}" alt=""></div>
+							<div class="news_post_image"><img src="{% static 'images/news_2.jpg' %}" alt="travel"></div>
 							<div class="news_post_content">
 								<div class="news_post_date d-flex flex-row align-items-end justify-content-start">
 									<div>01</div>
@@ -406,7 +409,7 @@ gtag('config', 'G-HDMDBMSL69');
 
 						<!-- News Post -->
 						<div class="news_post d-flex flex-md-row flex-column align-items-start justify-content-start">
-							<div class="news_post_image"><img src="{% static 'images/news_3.jpg' %}" alt=""></div>
+							<div class="news_post_image"><img src="{% static 'images/news_3.jpg' %}" alt="travel"></div>
 							<div class="news_post_content">
 								<div class="news_post_date d-flex flex-row align-items-end justify-content-start">
 									<div>29</div>
@@ -482,7 +485,7 @@ gtag('config', 'G-HDMDBMSL69');
 						<!-- Footer Contact Item -->
 						<div class="col-xl-4 footer_contact_col">
 							<div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">
-								<div class="footer_contact_icon"><img src="{% static 'images/sign.svg' %}" alt=""></div>
+								<div class="footer_contact_icon"><img src="{% static 'images/sign.svg' %}" alt="travel"></div>
 								<div class="footer_contact_title">give us a call</div>
 								<div class="footer_contact_list">
 									<ul>
@@ -496,7 +499,7 @@ gtag('config', 'G-HDMDBMSL69');
 						<!-- Footer Contact Item -->
 						<div class="col-xl-4 footer_contact_col">
 							<div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">
-								<div class="footer_contact_icon"><img src="{% static 'images/trekking.svg' %}" alt=""></div>
+								<div class="footer_contact_icon"><img src="{% static 'images/trekking.svg' %}" alt="travel"></div>
 								<div class="footer_contact_title">come & drop by</div>
 								<div class="footer_contact_list">
 									<ul style="max-width:190px">
@@ -509,7 +512,7 @@ gtag('config', 'G-HDMDBMSL69');
 						<!-- Footer Contact Item -->
 						<div class="col-xl-4 footer_contact_col">
 							<div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">
-								<div class="footer_contact_icon"><img src="{% static 'images/around.svg' %}" alt=""></div>
+								<div class="footer_contact_icon"><img src="{% static 'images/around.svg' %}" alt="travel"></div>
 								<div class="footer_contact_title">send us a message</div>
 								<div class="footer_contact_list">
 									<ul>
